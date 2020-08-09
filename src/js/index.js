@@ -28,9 +28,6 @@ const controlSearch = async () => {
     // 1. Get query from view
     const query = searchView.getInput();
 
-    // TESTING
-    //const query = 'burger';
-
     if (query) {
         // 2. Create new search obj and add to state
         state.search = new Search(query);
@@ -53,12 +50,6 @@ elements.searchForm.addEventListener('submit', e => {
     e.preventDefault();
     controlSearch();
 })
-
-// TESTING
-/* window.addEventListener('load', e => {
-    e.preventDefault();
-    controlSearch();
-}) */
 
 elements.searchResPages.addEventListener('click', e => {
     const btn = e.target.closest('.btn-inline');
