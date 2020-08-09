@@ -19,7 +19,6 @@ import * as likesView from './views/likesView';
  * --liked recipes
  */
 const state = {};
-window.state = state;
 
 /**
  * SEARCH CONTROLLER
@@ -218,4 +217,3 @@ elements.recipe.addEventListener('click', e => {
         controlLike();
     }
 });
-window.l = new List();
